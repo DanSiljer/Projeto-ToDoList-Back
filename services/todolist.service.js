@@ -11,7 +11,7 @@ class todolistService {
     return await TodolistModel.create(todolist);
   };
 
-  edit = async (id, t) => {
+  edit = async (id, todolist) => {
     return await TodolistModel.updateOne({ _id: id }, todolist);
   };
 
